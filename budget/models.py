@@ -19,8 +19,8 @@ class Project(models.Model):
 
         total_temp = 0
         budget_temp = 100
-        # expense_list_temp = [10, 11, 12, 14, 11]
-        expense_list_temp = [10, 11, 12, 14]
+        expense_list_temp = [10, 11, 12, 14, 11]
+        # expense_list_temp = [10, 11, 12, 14]
         for expenses in expense_list_temp:
             total_temp += expenses
         expense_amount = total_temp
@@ -28,8 +28,8 @@ class Project(models.Model):
 
 
         for expense in expense_list:
-            # total_expense_amount += expense_amount
-            total_expense_amount += expense.amount
+            total_expense_amount += expense_amount
+            # total_expense_amount += expense.amount
 
 
         # temporary solution, because the form currently only allows integer amounts
